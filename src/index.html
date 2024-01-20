@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Indonesia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #5181f5;
+        }
+
+        @media (max-width: 768px) {
+            .flex-mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .space-x-4-mobile > * {
+                margin-bottom: 0.5rem;
+                margin-top: 0.5rem;
+            }
+
+            header {
+                background-color: rgb(0, 0, 154);
+            }
+        }
+
+
+        body {
+            padding-top: 64px;
+            margin: 0;
+        }
+        
+        h1 {
+            display: flex;
+            align-items: center;
+        }
+
+        h1 img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #e2e8f0;
+            width: 80%;
+            margin: 2rem auto;
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <!-- Header -->
+    <header class="p-4 text-white flex justify-between items-center flex-mobile">
+        <h1 class="text-3xl font-bold">
+            <img src="../assets/icons/wonderful-indonesia.png" alt="Icon" /> Pariwisata Indonesia
+        </h1>
+        <!-- Navigation -->
+        <nav class="flex space-x-4 space-x-4-mobile">
+            <a href="#" class="text-white">Home</a>
+            <a href="#" class="text-white">Destinasi</a>
+            <a href="#" class="text-white">Paket Wisata</a>
+            <a href="#" class="text-white">About Us</a>
+            <a href="#" class="text-white">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Destinasi Wisata Pilihan -->
+    <section class="container mx-auto my-8 px-4">
+        <h2 class="text-3xl font-semibold mb-8 text-center mt-16">Destinasi Wisata Pilihan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Konten Destinasi Wisata -->
+            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                <img src="../assets/img/wisata-komodo.jpg" alt="Pulau Komodo" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-4">Eksplorasi Keindahan Alam Pulau Komodo</h3>
+                <p class="text-gray-600">Jelajahi keindahan alam pulau-pulau Komodo, yang terkenal dengan keberadaan komodo sebagai hewan purba.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-lg">
+                <img src="../assets/img/wisata-ijen.jpeg" alt="Kawah Ijen" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-4">Petualangan di Kawah Ijen, Jawa Timur</h3>
+                <p class="text-gray-600">Rencanakan perjalanan petualangan ke Kawah Ijen, yang terkenal dengan panorama danau kawah birunya yang memukau.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-lg">
+                <img src="../assets/img/wisata-toraja.jpg" alt="Tana Toraja" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-4">Menyelami Budaya Tana Toraja, Sulawesi Selatan</h3>
+                <p class="text-gray-600">Jelajahi keunikan budaya Tana Toraja di Sulawesi Selatan, termasuk tradisi unik pemakaman dan rumah tradisional Toraja.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-lg">
+                <img src="../assets/img/wisata-kapuas.jpg" alt="Sungai Kapuas" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-4">Menyusuri Sungai Kapuas, Kalimantan Barat</h3>
+                <p class="text-gray-600">Jelajahi keindahan alam Kalimantan Barat dengan menyusuri Sungai Kapuas, sungai terpanjang di Indonesia.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-lg">
+                <img src="../assets/img/wisata-toba.jpg" alt="Danau Toba" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-4">Melihat Keajaiban Alam Danau Toba, Sumatera Utara</h3>
+                <p class="text-gray-600">Terangkan tentang keindahan Danau Toba, danau vulkanik terbesar di dunia, dan mengunjungi desa tradisional Batak.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-lg">
+                <img src="../assets/img/wisata-pink.jpg" alt="Pantai Pink" class="w-full h-40 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-4">Pantai Pink Pulau Komodo, Nusa Tenggara Timur</h3>
+                <p class="text-gray-600">Pamerkan kecantikan langka Pantai Pink. Jelajahi keunikan pasir pantai yang berwarna pink dan keindahan lautnya.</p>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Gallery Foto -->
+    <section class="container mx-auto my-8 px-4">
+        <h2 class="text-3xl font-semibold mb-8 text-center">Galeri Foto</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="relative">
+                <img src="../assets/img/gal-7.jpg" alt="Orchid Forest Cikole" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Orchid Forest Cikole
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-2.jpg" alt="Candi Borobudur" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Candi Borobudur
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-3.jpg" alt="Gunung Bromo" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Gunung Bromo
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-4.jpg" alt="Pulo Cinta Eco" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Pulo Cinta Eco
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-5.jpg" alt="Desa Wae Rebo" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Desa Wae Rebo
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-6.jpg" alt="Dufan" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Dufan
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-9.jpeg" alt="Pantai Mandalika" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Pantai Mandalika
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../assets/img/gal-10.jpg" alt="Taman Nasional Way Kambas" class="w-full h-64 object-cover rounded-md mb-4">
+                <div class="absolute inset-x-0 bottom-0 bg-black bg-opacity-50 text-white text-lg font-bold p-4">
+                    Taman Nasional Way Kambas
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-white text-center">
+        <p>&copy; 2024 Pariwisata Indonesia</p>
+        <p> Husnia Munzayana</p> 
+        <p> All rights reserved</p>
+    </footer>
+
+</body>
+</html>
